@@ -25,25 +25,10 @@ app.use((req, res, next) => {
 
 // if (process.env.NODE_ENV === 'production') {
 // Set static folder
-//this.app.use(express.static(path.join(__dirname, '../web-app/build')));
-// if (process.env.NODE_ENV === 'production') {
-//     // Set static folder
-//     this.app.use(express.static(path.join(__dirname, '../web-app/build')));
+app.use(express.static('build'));
 
-//     this.app.get('/*', (req, res) => {
-//         res.sendFile(path.join(__dirname, '../web-app/build/index.html'));
-//     });
-// }
-
-// this.app.get('/*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../web-app/build/index.html'));
-// });
-app.use(express.static(path.join(__dirname, 'build')));
-// app.use(express.static(path.join(__dirname, './aayamskinclinic/build')));
-
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-    // res.sendFile(path.join(__dirname, './aayamskinclinic/build/index.html'));
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 // }
 
