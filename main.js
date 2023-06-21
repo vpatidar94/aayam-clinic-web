@@ -38,13 +38,10 @@ app.use((req, res, next) => {
 // this.app.get('/*', (req, res) => {
 //     res.sendFile(path.join(__dirname, '../web-app/build/index.html'));
 // });
-// app.use(express.static('build'));
-app.use(express.static(path.join(__dirname, './aayamskinclinic/build')));
+app.use(express.static('build'));
 
-app.get('/*', (req, res) => {
-    // res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-    res.sendFile(path.join(__dirname, './aayamskinclinic/build/index.html'));
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
-// }
 
 module.exports = app;
