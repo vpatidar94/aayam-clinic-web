@@ -17,6 +17,7 @@
   "bugs": {
     "url": "https://github.com/vpatidar94/issues"
   },
+  "homepage": "./x",
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^8.2.0",
