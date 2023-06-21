@@ -1,0 +1,83 @@
+.top-most-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px;
+    background-color: #F5ACB7;
+    
+  }
+  .top-contactus-component{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  .top-header-contact{
+  color: rgb(243, 240, 240);
+  text-decoration: none;
+  }
+  .top-icons-container{
+    display: none;
+   
+  }
+  .top-most-header-icon{
+  color: antiquewhite;
+  }
+  .fa-icon{
+    color: #faf2f3;
+    background-color: white;
+  }
+  .fa-insta{
+    color: #e0cfd9;
+  }
+  .fa-face{
+    color: #6a5ac5;
+  }
+  .fa-youtube{
+    color: red;
+    font-size: 18px;
+  }
+  .fa-gmail{
+    color: #af3846;
+  }
+  @media (min-width:768px){
+  .top-most-header-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 6px;
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+  
+  .top-header-contact{
+    color: rgb(243, 240, 240);
+    text-decoration: none;
+  }
+  
+  .top-most-header-icon{
+    color: antiquewhite;
+  }
+  .top-icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 160px;
+    text-align: right;
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

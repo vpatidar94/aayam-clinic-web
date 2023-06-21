@@ -1,0 +1,108 @@
+.aboutus-page-container{
+    padding: 10px;
+}
+.page-heading{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(41, 28, 28);
+}
+
+.director-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+.director-img-container{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    text-align: center;
+}
+.director-img{
+    width: 70%;
+    max-height: 300px;
+    order: 0;
+}
+.director-description{
+    text-align: left;
+    order: 2;
+}
+
+.director-heading{
+    font-family: Verdana;
+    font-size: 22px;
+    font-weight: bold;
+    color: #192f77;
+    text-decoration: underline;
+    text-decoration-color:brown;
+    margin-bottom: 10px;
+    order: 1;
+    
+}
+
+.director-info{
+    margin-top: 10px;
+    font-family: Verdana;
+    font-size: 16px;
+    color:rgb(194, 38, 111);
+    text-align: justify;
+    order: 2;
+    
+}
+
+@media (min-width:768px) {
+    .aboutus-page-container{
+        padding: 40px 60px 0px 60px;
+    }
+.page-heading{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(41, 28, 28);
+    margin:20px
+}
+
+.director-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+.director-img-container{
+    text-align: center;
+}
+.director-img{
+    margin:20px;
+    width: 250px;
+    order: 0;
+}
+.director-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    order: 0;
+}
+
+.director-heading{
+    font-family: Verdana;
+    font-size: 28px;
+    font-weight: bold;
+    color: #192f77;
+    text-decoration: underline;
+    text-decoration-color:brown;
+    margin-bottom: 10px;
+    margin-left: 20px;
+   
+    order: 0;
+}
+
+.director-info{
+    font-family: Verdana;
+    font-size: 18px;
+    padding-top: 10px;
+   line-height: 1.8;
+    order: 0;
+}
+}

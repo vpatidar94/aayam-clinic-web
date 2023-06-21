@@ -1,0 +1,50 @@
+.ourservice-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ourservice-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+    position: relative;
+    transition: all .2s ease;
+    
+}
+
+.ourservice-card:hover {
+    transform: translateY(-8px);
+}
+
+
+.ourservice-image{
+    width: 90%;
+}
+
+@media (min-width:768px) {
+    .ourservice-container{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    .ourservice-card{
+        width: 24%;
+    }
+    .ourservice-image{
+        width: 80%;
+    }
+}
+
+@media (min-width:1200px){
+    .ourservice-card{
+        width: 28%;
+    }
+}
