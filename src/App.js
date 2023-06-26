@@ -42,8 +42,6 @@ const App = () => {
         <Route path='TermsAndCondition' element={<TermsAndCondition/>}/>
       </Routes>
       </BrowserRouter>
-      
-      
     </div>
   )
 }

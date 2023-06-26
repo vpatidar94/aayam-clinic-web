@@ -19,11 +19,11 @@ const Footer = () => {
             </p>
             <CDBBox display="flex" className="mt-4 mb-3">
              
-                <CDBIcon fab icon="facebook-f" className="p-2 mx-3 icon" href="https://www.facebook.com/people/Aayam-Skin-Clinic/100077431158744/"/>
+                <a href="https://www.facebook.com/people/Aayam-Skin-Clinic/100077431158744/"><CDBIcon fab icon="facebook-f" className="p-2 mx-3 icon" /></a>
            
-                <CDBIcon fab icon="twitter" className="p-2 mx-3 icon" href="https://instagram.com/aayam_skin_clinic?igshid=YmMyMTA2M2Y="/>
+                <a href="https://instagram.com/aayam_skin_clinic?igshid=YmMyMTA2M2Y="><CDBIcon fab icon="twitter" className="p-2 mx-3 icon" /></a>
               
-                <CDBIcon fab icon="instagram" className="p-2 mx-3 icon" href="https://instagram.com/aayam_skin_clinic?igshid=YmMyMTA2M2Y="/>
+                <a href="https://instagram.com/aayam_skin_clinic?igshid=YmMyMTA2M2Y="><CDBIcon fab icon="instagram" className="p-2 mx-3 icon" /></a>
         
             </CDBBox>
           </CDBBox>
@@ -47,7 +47,7 @@ const Footer = () => {
               <Link to="/AboutUs" className='footer-item'>About Us</Link>
               <Link to="/ContactUs" className='footer-item'>Contact</Link>
               <Link to="/Appointment" className='footer-item'>Online Appointment</Link>
-              <Link to="/TermsAndCondition" className='footer-item'>Terms & Condition</Link>
+              <Link to="/TermsAndCondition" className='footer-item'>Terms & Conditions</Link>
               
             </div>
           </CDBBox>

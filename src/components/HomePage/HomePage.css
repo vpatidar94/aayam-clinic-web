@@ -79,7 +79,7 @@
     height: 285px;
 }
 .why-to-choose-container{
-    margin: 20px;
+    margin: 0px;
 }
 
 .service-container {
@@ -90,7 +90,8 @@
     align-items: center;
     background:  linear-gradient(#dde7e7, #fcf6f6);
     border-radius: 15px 15px 15px 15px;
-    box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+    /* box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
     transition: all .2s ease;
 }
@@ -263,6 +264,7 @@
         width: 50%;
     }
     .why-to-choose-container{
+        margin: 40px;
         width:40%;
     }
 

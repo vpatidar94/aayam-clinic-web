@@ -31,7 +31,7 @@ const HomePage = () => {
 
           </p>
           <div className="btn-container ">
-            <button href="appoinment.html" target="_blank" className="button-appointment">Make appoinment </button>
+           <Link to="/Appointment"><button   className="button-appointment">Make appoinment </button></Link>
           </div>
         </div>
         <div className='image-container'>
@@ -44,7 +44,7 @@ const HomePage = () => {
           <FaUserMd className='card-icon' />
           <h4 className='card-tittle mb-2'>Online Appointment</h4>
           <p className='head-title'>Book Your Appointment Here</p>
-          <Link to="/foundationoneneet">
+          <Link to="/Appointment">
             <button type="button" className='button'>Make Your Appoinment</button>
           </Link>
         </div>
@@ -105,7 +105,7 @@ const HomePage = () => {
             </Carousel>
           </div>
         </div>
-        <div className='mt-5 m-4 why-to-choose-container'>
+        <div className='mt-5  why-to-choose-container'>
           <h1 className='title color-2'>Why to Choose <span className='color-3'>AAYAM</span></h1>
           <p className='top-head-title'>Aayam Skin Clinic is a dedicated skin care unit which serves you with complete skin , cosmetology and hair care. It is driven by Dr. Abhilasha Patidar who has done her M.D. Dermatology from R.N.T medical college, Udaipur. Our dermatologist is well experienced and aims to use best technology, treatment protocols and equipments. We have treatment facility for acne, acne scar, dark spots, vitiligo (white spots), dark circle, stretch marks. Facility of wart and corn removal, cyst removal, lipoma removal, and ear lobe repair. For hair loss, dandruff we have medical, PRP and mesotherapy treatments."</p>
         </div>
@@ -114,7 +114,7 @@ const HomePage = () => {
       <div className=''>
         <h1 className='head '>Our Services</h1>
         <div className='services-container'>
-          <div className="service-container">
+         <Link className="service-container" to='/SkinTreatment'>
             <h4 class="title-s card-head">SKIN TREATEMENT</h4>
             <div className='service-info-container'>
               <img src="./images/service/skin-care.jpg" alt='img' className='service-image' />
@@ -133,9 +133,9 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="service-container">
+          <Link className="service-container" to='/CosmeticTreatment'>
             <h4 class="title-s card-head">COSMETIC TREATMENT</h4>
             <div className='service-info-container'>
               <img src="./images/service/Cosmetic-image1.jpg" alt='img' className='service-image' />
@@ -154,8 +154,9 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="service-container">
+          </Link>
+
+          <Link className="service-container" to='/ProceduralTreatment'>
             <h4 class="title-s card-head">PROCEDURAL TREATMENT</h4>
             <div className='service-info-container'>
               <img src="./images/service/prt.jpg" alt='img' className='service-image' />
@@ -172,9 +173,9 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="service-container">
+          <Link className="service-container" to='/DermatoSurgery'>
             <h4 class="title-s card-head">DERMATOSURGERIES</h4>
             <div className='service-info-container'>
               <img src="./images/service/demt.jpg" alt='img' className='service-image' />
@@ -189,7 +190,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           <div className="mt-5 d-lg-flex flex-md-row align-item-start ">
             <div className="col-lg-5 ">
@@ -215,7 +216,7 @@ const HomePage = () => {
      
 
 
-
+      
       <SlidingReviews />
       
     </div>

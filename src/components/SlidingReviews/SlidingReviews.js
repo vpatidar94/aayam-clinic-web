@@ -42,7 +42,7 @@ const SlidingReviews = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextPerson();
-    }, 2000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
@@ -51,10 +51,11 @@ const SlidingReviews = () => {
 
   return(
   <>
-  <div className='review-container'>
+  <div className='reviews-container'>
+  <h1 className='title color-2 mt-5 text-center'>We served over 1500+ Patients </h1>
   <article className="review">
       <h4 className="author">{name}</h4>
-      <p className="jon">{job}</p>
+      <p className="job">{job}</p>
       <p className="info">{text}</p>
       <div className="button-container">
         <button className="prev-btn" onClick={prevPerson}>
@@ -64,10 +65,7 @@ const SlidingReviews = () => {
           <FaChevronRight />
         </button>  
       </div>
-      <button className="random-btn" onClick={randomPerson}>
-          Suprise Me!
-        </button>
-  </article>;
+  </article>
   </div>
   </>)
 };
