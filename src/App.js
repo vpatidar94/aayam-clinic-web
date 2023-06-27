@@ -1,49 +1,53 @@
-import React from 'react';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import HomePage from './components/HomePage/HomePage'
-import Header from './components/Header/Header'
-import AboutUs from './components/AboutUs/AboutUs';
-import SkinTreatment from './components/SkinTreatment/SkinTreatment';
-import CosmeticTreatment from './components/CosmeticTreatment/CosmeticTreatment';
-import DermatoSurgery from './components/DermatoSurgery/DermatoSugery';
-import ProceduralTreatment from './components/ProceduralTreatment/ProceduralTreatment';
-import Appointment from './components/Appointment/Appointment';
-import Services from './components/Services/Services';
-import ContactUs from './components/ContactUs/ContactUs';
-import SkinTips from './components/HealthTips/SkinTips/SkinTips';
-import NailsTips from './components/HealthTips/NailsTips/NailsTips';
-import HairTips from './components/HealthTips/HairTips/HairTips';
-import DentalTips from './components/HealthTips/DentalTips/DentalTips';
-import GeneralHealthTips from './components/HealthTips/GeneralHealthTips/GeneralHealthTips';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TopHeader from './components/TopHeader/TopHeader';
-import TermsAndCondition from './components/TermsAndCondition/TermsAndCondition';
+import Header from './components/Header/Header';
+
+// Lazy-loaded components
+const HomePage = lazy(() => import('./components/HomePage/HomePage'));
+const AboutUs = lazy(() => import('./components/AboutUs/AboutUs'));
+const SkinTreatment = lazy(() => import('./components/SkinTreatment/SkinTreatment'));
+const CosmeticTreatment = lazy(() => import('./components/CosmeticTreatment/CosmeticTreatment'));
+const DermatoSurgery = lazy(() => import('./components/DermatoSurgery/DermatoSurgery'));
+const ProceduralTreatment = lazy(() => import('./components/ProceduralTreatment/ProceduralTreatment'));
+const Appointment = lazy(() => import('./components/Appointment/Appointment'));
+const Services = lazy(() => import('./components/Services/Services'));
+const ContactUs = lazy(() => import('./components/ContactUs/ContactUs'));
+const SkinTips = lazy(() => import('./components/HealthTips/SkinTips/SkinTips'));
+const NailsTips = lazy(() => import('./components/HealthTips/NailsTips/NailsTips'));
+const HairTips = lazy(() => import('./components/HealthTips/HairTips/HairTips'));
+const DentalTips = lazy(() => import('./components/HealthTips/DentalTips/DentalTips'));
+const GeneralHealthTips = lazy(() => import('./components/HealthTips/GeneralHealthTips/GeneralHealthTips'));
+const TermsAndCondition = lazy(() => import('./components/TermsAndCondition/TermsAndCondition'));
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-      <TopHeader/>
-      <Header/>
-      <Routes>
-        <Route  path="/" element={<HomePage/>}/>
-        <Route path="AboutUs" element={<AboutUs/>}/>
-        <Route path="SkinTreatment" element={<SkinTreatment/>}/>
-        <Route path="CosmeticTreatment" element={<CosmeticTreatment/>}/>
-        <Route path="DermatoSurgery" element={<DermatoSurgery/>}/>
-        <Route path="ProceduralTreatment" element={<ProceduralTreatment/>}/>
-        <Route path='Appointment' element={<Appointment/>}/>
-        <Route path="Services" element={<Services/>}/>
-        <Route path="ContactUs" element={<ContactUs/>}/>
-        <Route path="SkinTips" element={<SkinTips/>}/>
-        <Route path="NailsTips" element={<NailsTips/>}/>
-        <Route path="HairTips" element={<HairTips/>}/>
-        <Route path="DentalTips" element={<DentalTips/>}/>
-        <Route path="GeneralHealthTips" element={<GeneralHealthTips/>}/>
-        <Route path='TermsAndCondition' element={<TermsAndCondition/>}/>
-      </Routes>
-      </BrowserRouter>
+      <Router>
+        <TopHeader />
+        <Header />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="AboutUs" element={<AboutUs />} />
+            <Route path="SkinTreatment" element={<SkinTreatment />} />
+            <Route path="CosmeticTreatment" element={<CosmeticTreatment />} />
+            <Route path="DermatoSurgery" element={<DermatoSurgery />} />
+            <Route path="ProceduralTreatment" element={<ProceduralTreatment />} />
+            <Route path="Appointment" element={<Appointment />} />
+            <Route path="Services" element={<Services />} />
+            <Route path="ContactUs" element={<ContactUs />} />
+            <Route path="SkinTips" element={<SkinTips />} />
+            <Route path="NailsTips" element={<NailsTips />} />
+            <Route path="HairTips" element={<HairTips />} />
+            <Route path="DentalTips" element={<DentalTips />} />
+            <Route path="GeneralHealthTips" element={<GeneralHealthTips />} />
+            <Route path="TermsAndCondition" element={<TermsAndCondition />} />
+          </Routes>
+        </Suspense>
+      </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
