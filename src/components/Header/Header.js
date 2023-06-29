@@ -23,7 +23,7 @@ const Header = () => {
 
       <Navbar collapseOnSelect expand="md" className="my-nav1  top-section1" sticky="top" expanded={isNavbarOpen}>
         <Navbar.Brand href="/">
-          <img src="./images/logo.jpg" alt="Logo" className="logo" />
+          <img src="./images/logo.jpg" alt="Logo" className="logo-h" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-icon" onClick={() => setIsNavbarOpen(!isNavbarOpen)} />
         <Navbar.Collapse id="basic-navbar-nav" className="collapse-bar justify-content-end">
